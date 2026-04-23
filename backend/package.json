@@ -1,0 +1,17 @@
+{
+  "name": "british-auction-backend",
+  "version": "1.0.0",
+  "description": "British auction RFQ backend for assignment",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node src/index.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.9.1",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "node-cron": "^3.0.3"
+  }
+}

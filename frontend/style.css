@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
+
+:root {
+  --violet: #7d39eb;
+  --violet-dark: #6228cc;
+  --violet-light: #9b5ef5;
+  --lime: #c6ff33;
+  --lime-dark: #a8d900;
+  --lime-muted: #deff99;
+  --surface: #ffffff;
+  --surface2: #f8fafc;
+  --border: #e2e8f0;
+  --text: #1e293b;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  margin: 20px;
+  color: var(--text);
+  background: linear-gradient(180deg, #f3f0ff 0%, var(--surface2) 35%);
+}
+
+.card {
+  background: var(--surface);
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  margin-bottom: 16px;
+  box-shadow: 0 10px 24px rgba(98, 40, 204, 0.06);
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  min-width: 220px;
+}
+
+input,
+select,
+textarea,
+button {
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid var(--violet-light);
+  outline-offset: 1px;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid transparent;
+  background: var(--violet);
+  color: #fff;
+  font-weight: 600;
+  transition: background 0.18s ease;
+}
+
+button:hover {
+  background: var(--violet-dark);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+}
+
+th,
+td {
+  border: 1px solid var(--border);
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background: var(--surface2);
+  color: var(--violet-dark);
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.UPCOMING {
+  background: #64748b;
+}
+
+.ACTIVE {
+  background: var(--lime-dark);
+  color: #1d2a00;
+}
+
+.CLOSED {
+  background: var(--violet-light);
+}
+
+.FORCE_CLOSED {
+  background: var(--violet-dark);
+}
+
+.error {
+  color: var(--violet-dark);
+  background: #f3e8ff;
+  border: 1px solid #e9d5ff;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.success {
+  color: #355100;
+  background: var(--lime-muted);
+  border: 1px solid var(--lime);
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+p strong {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  color: var(--violet-dark);
+}

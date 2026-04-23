@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: british-auction-rfq
+    env: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: DATABASE_PATH
+        value: /tmp/auction.db
+      - key: FRONTEND_ORIGIN
+        value: "*"
