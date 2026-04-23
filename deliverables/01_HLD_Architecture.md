@@ -1,4 +1,4 @@
-# Simple HLD - British Auction RFQ System
+# British Auction RFQ System
 
 ## 1) Goal
 
@@ -62,9 +62,3 @@ flowchart LR
    - Gate 3: new close <= forced close?
 5. If passed, bid close is extended and extension log is inserted.
 6. Cron closes auctions when time crosses `bid_close` or `forced_close`.
-
-## 5) Non-Functional Notes
-
-- Simple flat folder structure for assignment readability.
-- No ORM, no TypeScript, no build tooling.
-- Easy local and Render deployment using a single web service.
